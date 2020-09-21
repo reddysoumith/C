@@ -1,0 +1,17 @@
+#include<stdio.h>
+float addition(float num1, float num2, float num3)
+{
+float sum;
+sum = num1 + num2 + num3;
+return sum;
+}
+int main()
+{
+float number1, number2, number3, result;
+printf("Enter three number: ");
+scanf("%f %f %f",&number1, &number2, &number3);
+result = addition(number1, number2, number3);
+printf("%.2f + %.2f +%.2f = %.2f\n",
+number1, number2,number3, result);
+return 0;
+}
